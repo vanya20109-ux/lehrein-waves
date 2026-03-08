@@ -67,6 +67,13 @@ export default {
           DEFAULT: "hsl(var(--foam))",
           foreground: "hsl(var(--foam-foreground))",
         },
+        "kintsugi-gold": {
+          DEFAULT: "hsl(var(--kintsugi-gold))",
+          foreground: "hsl(var(--kintsugi-gold-foreground))",
+        },
+        "kintsugi-light": {
+          DEFAULT: "hsl(var(--kintsugi-light))",
+        },
         "teal-deep": {
           DEFAULT: "hsl(var(--teal-deep))",
           foreground: "hsl(var(--teal-deep-foreground))",

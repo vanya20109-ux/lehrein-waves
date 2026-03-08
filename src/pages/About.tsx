@@ -1,6 +1,7 @@
 import { GraduationCap, Building2, Users, School, Waves } from "lucide-react";
 import WaveDivider from "@/components/WaveDivider";
 import KanagawaWave from "@/components/KanagawaWave";
+import KintsugiText from "@/components/KintsugiText";
 import IndiaMap from "@/components/IndiaMap";
 
 const serveCards = [
@@ -16,34 +17,47 @@ const About = () => {
       {/* Hero — Kanagawa-inspired */}
       <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          {/* Sky gradient — like the pale sky behind the wave */}
+          {/* Sky gradient */}
           <div className="absolute inset-0 bg-gradient-to-b from-foam via-secondary/50 to-background" />
 
-          {/* Great wave SVG background */}
-          <svg className="absolute bottom-0 w-full h-[60%]" viewBox="0 0 1440 500" preserveAspectRatio="none">
+          {/* Great Wave SVG — more dramatic and visible */}
+          <svg className="absolute bottom-0 w-full h-[65%]" viewBox="0 0 1440 600" preserveAspectRatio="none">
             {/* Deep ocean */}
-            <path d="M0,250 C120,200 200,150 360,200 C520,250 580,300 720,260 C860,220 920,170 1080,220 C1200,260 1320,290 1440,250 L1440,500 L0,500Z" fill="hsl(var(--navy))" opacity="0.18" />
-            {/* Mid wave — the great curl */}
-            <path d="M-100,320 C0,260 80,200 200,230 C320,260 380,310 500,280 C620,250 680,200 800,240 C920,280 980,320 1100,290 C1220,260 1300,220 1440,270 L1440,500 L-100,500Z" fill="hsl(var(--primary))" opacity="0.14" />
-            {/* Wave crest curl */}
-            <path d="M0,370 C80,340 160,310 280,330 C400,350 440,370 560,355 C680,340 740,315 860,335 C980,355 1040,375 1160,358 C1280,340 1360,320 1440,340 L1440,500 L0,500Z" fill="hsl(var(--indigo))" opacity="0.10" />
-            {/* Foam spray */}
-            <path d="M160,225 C185,210 215,205 240,212 C255,216 265,225 270,230" stroke="hsl(var(--foam))" strokeWidth="2.5" fill="none" opacity="0.5" />
-            <path d="M200,215 C210,205 225,200 240,205" stroke="hsl(var(--foam))" strokeWidth="1.5" fill="none" opacity="0.35" />
-            <path d="M760,235 C785,220 815,215 840,222 C855,226 865,235 870,240" stroke="hsl(var(--foam))" strokeWidth="2.5" fill="none" opacity="0.45" />
-            <path d="M1150,265 C1175,250 1205,245 1230,252" stroke="hsl(var(--foam))" strokeWidth="2" fill="none" opacity="0.4" />
+            <path d="M0,300 C120,240 200,180 360,230 C520,280 580,340 720,290 C860,240 920,180 1080,240 C1200,285 1320,330 1440,280 L1440,600 L0,600Z" fill="hsl(var(--navy))" opacity="0.22" />
+            {/* Mid wave — the great curl body */}
+            <path d="M-100,370 C0,300 80,230 200,270 C320,310 380,360 500,320 C620,280 680,220 800,270 C920,320 980,370 1100,330 C1220,290 1300,240 1440,300 L1440,600 L-100,600Z" fill="hsl(var(--primary))" opacity="0.18" />
+            {/* Curling crest — the iconic spiral */}
+            <path d="M0,420 C80,385 160,350 280,375 C400,400 440,425 560,408 C680,390 740,360 860,382 C980,405 1040,425 1160,408 C1280,390 1360,365 1440,385 L1440,600 L0,600Z" fill="hsl(var(--indigo))" opacity="0.14" />
+
+            {/* Wave curl spirals — signature Kanagawa feature */}
+            <path d="M160,260 C185,230 230,215 265,228 C290,238 300,260 292,278 C284,292 265,298 248,290 C236,284 230,270 238,258" stroke="hsl(var(--steel))" strokeWidth="3" fill="none" opacity="0.35" />
+            <path d="M760,265 C790,235 835,220 870,235 C895,245 905,268 898,285 C890,298 872,304 856,296 C844,290 840,276 848,264" stroke="hsl(var(--steel))" strokeWidth="3" fill="none" opacity="0.30" />
+
+            {/* Foam spray — white frothy tips */}
+            <path d="M140,255 C170,235 210,225 250,235 C270,240 280,255 285,262" stroke="hsl(var(--foam))" strokeWidth="3" fill="none" opacity="0.55" />
+            <path d="M155,245 C170,235 190,228 210,232" stroke="hsl(var(--foam))" strokeWidth="2" fill="none" opacity="0.35" />
+            <path d="M740,260 C770,242 810,232 850,242 C870,248 880,262 882,268" stroke="hsl(var(--foam))" strokeWidth="3" fill="none" opacity="0.50" />
+            <path d="M1150,290 C1180,272 1210,265 1240,275" stroke="hsl(var(--foam))" strokeWidth="2.5" fill="none" opacity="0.42" />
+
+            {/* Foam droplets scattered */}
+            <circle cx="125" cy="250" r="2.5" fill="hsl(var(--foam))" opacity="0.4" />
+            <circle cx="190" cy="228" r="2" fill="hsl(var(--foam))" opacity="0.35" />
+            <circle cx="240" cy="222" r="1.5" fill="hsl(var(--foam))" opacity="0.3" />
+            <circle cx="720" cy="255" r="2.5" fill="hsl(var(--foam))" opacity="0.35" />
+            <circle cx="800" cy="230" r="2" fill="hsl(var(--foam))" opacity="0.3" />
+            <circle cx="1140" cy="285" r="2" fill="hsl(var(--foam))" opacity="0.3" />
           </svg>
 
           {/* Floating elements */}
-          <Waves className="absolute top-20 right-[15%] text-navy/15 animate-wave-float" size={64} />
-          <Waves className="absolute top-40 left-[10%] text-steel/15 animate-sway" size={48} />
-          <Waves className="absolute bottom-[45%] right-[25%] text-primary/10 animate-wave-float" size={36} style={{ animationDelay: "3s" }} />
-          <div className="absolute top-32 left-[30%] w-3 h-3 rounded-full bg-accent/30 animate-wave-float" style={{ animationDelay: "0.5s" }} />
-          <div className="absolute top-52 right-[35%] w-2 h-2 rounded-full bg-steel/30 animate-wave-float" style={{ animationDelay: "2s" }} />
+          <Waves className="absolute top-20 right-[15%] text-navy/20 animate-wave-float" size={64} />
+          <Waves className="absolute top-40 left-[10%] text-steel/20 animate-sway" size={48} />
+          <Waves className="absolute bottom-[45%] right-[25%] text-primary/15 animate-wave-float" size={36} style={{ animationDelay: "3s" }} />
+          <div className="absolute top-32 left-[30%] w-3 h-3 rounded-full bg-accent/35 animate-wave-float" style={{ animationDelay: "0.5s" }} />
+          <div className="absolute top-52 right-[35%] w-2 h-2 rounded-full bg-steel/35 animate-wave-float" style={{ animationDelay: "2s" }} />
         </div>
 
         <div className="container mx-auto px-4 text-center animate-fade-up relative z-10">
-          <div className="inline-block px-5 py-2 rounded-full bg-navy/10 text-navy text-sm font-semibold tracking-wide mb-6 border border-navy/10">
+          <div className="inline-block px-5 py-2 rounded-full bg-navy/12 text-navy text-sm font-semibold tracking-wide mb-6 border border-navy/15">
             The Psychology Association
           </div>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight">
@@ -64,8 +78,8 @@ const About = () => {
 
       {/* Who We Are */}
       <section className="py-24 relative">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-steel/5 rounded-full blur-3xl -z-10" />
-        <div className="absolute bottom-0 left-0 w-48 h-48 bg-navy/5 rounded-full blur-3xl -z-10" />
+        <div className="absolute top-0 right-0 w-64 h-64 bg-steel/8 rounded-full blur-3xl -z-10" />
+        <div className="absolute bottom-0 left-0 w-48 h-48 bg-navy/8 rounded-full blur-3xl -z-10" />
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="flex items-center gap-3 justify-center mb-8">
             <div className="w-12 h-[2px] bg-gradient-to-r from-transparent to-navy/40" />
@@ -88,15 +102,18 @@ const About = () => {
         </div>
       </section>
 
+      {/* Kintsugi Section */}
+      <KintsugiText />
+
       <WaveDivider flip />
 
       {/* Who We Serve */}
-      <section className="relative py-24 bg-gradient-to-b from-navy/5 via-secondary/40 to-background overflow-hidden">
-        {/* Background wave texture */}
-        <svg className="absolute top-0 left-0 w-full h-full opacity-[0.03]" viewBox="0 0 1440 600" preserveAspectRatio="none">
-          <path d="M0,200 C200,300 400,100 600,200 C800,300 1000,100 1200,200 C1320,260 1400,240 1440,200" stroke="hsl(var(--navy))" strokeWidth="3" fill="none" />
-          <path d="M0,300 C200,400 400,200 600,300 C800,400 1000,200 1200,300 C1320,360 1400,340 1440,300" stroke="hsl(var(--primary))" strokeWidth="2" fill="none" />
-          <path d="M0,400 C200,500 400,300 600,400 C800,500 1000,300 1200,400" stroke="hsl(var(--steel))" strokeWidth="1.5" fill="none" />
+      <section className="relative py-24 bg-gradient-to-b from-navy/8 via-secondary/40 to-background overflow-hidden">
+        {/* Background wave texture — more visible */}
+        <svg className="absolute top-0 left-0 w-full h-full opacity-[0.06]" viewBox="0 0 1440 600" preserveAspectRatio="none">
+          <path d="M0,200 C200,300 400,100 600,200 C800,300 1000,100 1200,200 C1320,260 1400,240 1440,200" stroke="hsl(var(--navy))" strokeWidth="4" fill="none" />
+          <path d="M0,300 C200,400 400,200 600,300 C800,400 1000,200 1200,300 C1320,360 1400,340 1440,300" stroke="hsl(var(--primary))" strokeWidth="3" fill="none" />
+          <path d="M0,400 C200,500 400,300 600,400 C800,500 1000,300 1200,400" stroke="hsl(var(--steel))" strokeWidth="2" fill="none" />
         </svg>
         <div className="container mx-auto px-4 relative">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
@@ -109,9 +126,9 @@ const About = () => {
             {serveCards.map((card, i) => (
               <div
                 key={card.title}
-                className={`bg-card/80 backdrop-blur-sm rounded-2xl p-6 text-center hover-lift border border-navy/10 animate-fade-up-delay-${Math.min(i + 1, 3)}`}
+                className={`bg-card/80 backdrop-blur-sm rounded-2xl p-6 text-center hover-lift border border-navy/12 animate-fade-up-delay-${Math.min(i + 1, 3)}`}
               >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-navy/15 to-steel/10 shadow-md flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-navy/20 to-steel/15 shadow-md flex items-center justify-center mx-auto mb-4">
                   <card.icon size={28} className="text-navy" />
                 </div>
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">{card.title}</h3>
@@ -126,7 +143,7 @@ const About = () => {
 
       {/* Interactive Map */}
       <section className="py-24 relative">
-        <div className="absolute top-20 left-0 w-96 h-96 bg-steel/5 rounded-full blur-3xl -z-10" />
+        <div className="absolute top-20 left-0 w-96 h-96 bg-steel/8 rounded-full blur-3xl -z-10" />
         <div className="container mx-auto px-4">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
             Where Lehrein is Live
@@ -142,14 +159,16 @@ const About = () => {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-indigo to-navy -z-10" />
         {/* Kanagawa foam decoration */}
-        <svg className="absolute top-0 w-full opacity-10 rotate-180" viewBox="0 0 1440 80" preserveAspectRatio="none">
-          <path d="M0,40 C120,10 240,0 360,20 C480,40 540,60 660,40 C780,20 840,0 960,20 C1080,40 1140,60 1260,40 C1340,28 1400,15 1440,20 L1440,80 L0,80Z" fill="hsl(var(--foam))" />
+        <svg className="absolute top-0 w-full opacity-15 rotate-180" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path d="M0,50 C120,15 240,0 360,25 C480,50 540,70 660,45 C780,20 840,0 960,25 C1080,50 1140,70 1260,45 C1340,30 1400,15 1440,22 L1440,100 L0,100Z" fill="hsl(var(--foam))" />
+          {/* Curl detail */}
+          <path d="M300,28 C320,15 350,8 375,18 C390,24 395,38 388,48" stroke="hsl(var(--foam))" strokeWidth="1.5" fill="none" opacity="0.5" />
         </svg>
-        <svg className="absolute bottom-0 w-full opacity-10" viewBox="0 0 1440 80" preserveAspectRatio="none">
-          <path d="M0,40 C120,10 240,0 360,20 C480,40 540,60 660,40 C780,20 840,0 960,20 C1080,40 1140,60 1260,40 C1340,28 1400,15 1440,20 L1440,80 L0,80Z" fill="hsl(var(--foam))" />
+        <svg className="absolute bottom-0 w-full opacity-15" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path d="M0,50 C120,15 240,0 360,25 C480,50 540,70 660,45 C780,20 840,0 960,25 C1080,50 1140,70 1260,45 C1340,30 1400,15 1440,22 L1440,100 L0,100Z" fill="hsl(var(--foam))" />
         </svg>
         <div className="container mx-auto px-4 text-center relative">
-          <Waves className="mx-auto mb-4 text-navy-foreground/25" size={40} />
+          <Waves className="mx-auto mb-4 text-navy-foreground/30" size={40} />
           <h2 className="font-display text-3xl md:text-4xl font-bold text-navy-foreground mb-4">
             Ready to Make Waves?
           </h2>
