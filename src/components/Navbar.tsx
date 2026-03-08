@@ -14,10 +14,10 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-navy/10">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-display text-2xl font-bold text-teal-deep tracking-tight">
+          <span className="font-display text-2xl font-bold text-navy tracking-tight">
             Lehrein
           </span>
           <span className="hidden sm:inline text-xs text-muted-foreground font-sans mt-1">
@@ -33,7 +33,7 @@ const Navbar = () => {
               to={link.to}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                 location.pathname === link.to
-                  ? "bg-primary/20 text-teal-deep"
+                  ? "bg-navy/10 text-navy"
                   : "text-muted-foreground hover:text-foreground hover:bg-secondary"
               }`}
             >
@@ -62,7 +62,7 @@ const Navbar = () => {
               onClick={() => setMobileOpen(false)}
               className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                 location.pathname === link.to
-                  ? "bg-primary/20 text-teal-deep"
+                  ? "bg-navy/10 text-navy"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
