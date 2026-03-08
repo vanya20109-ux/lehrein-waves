@@ -1,25 +1,28 @@
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight, Waves } from "lucide-react";
 import WaveDivider from "@/components/WaveDivider";
-
-const modules = Array.from({ length: 10 }, (_, i) => ({
-  number: i + 1,
-  name: "Art Therapy",
-  desc: "Explore the intersection of creative expression and psychological healing. This module uses art-based interventions to help participants process emotions, reduce stress, and build self-awareness through guided activities.",
-}));
+import { modules } from "@/data/modules";
 
 const Modules = () => {
-  const [expanded, setExpanded] = useState<number | null>(null);
-
   return (
     <div className="overflow-hidden">
       {/* Hero */}
-      <section className="py-20 bg-gradient-to-b from-primary/15 to-background">
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/25 via-accent/10 to-background" />
+          <svg className="absolute bottom-0 w-full" viewBox="0 0 1440 200" preserveAspectRatio="none">
+            <path d="M0,120 C360,200 720,40 1080,120 C1260,160 1380,140 1440,120 L1440,200 L0,200Z" fill="hsl(var(--primary) / 0.12)" />
+            <path d="M0,160 C240,200 480,120 720,160 C960,200 1200,120 1440,160 L1440,200 L0,200Z" fill="hsl(var(--accent) / 0.08)" />
+          </svg>
+          <Waves className="absolute top-16 right-[12%] text-accent/20 animate-wave-float" size={56} />
+          <Waves className="absolute top-32 left-[8%] text-primary/15 animate-wave-float" size={40} style={{ animationDelay: "2s" }} />
+        </div>
+
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4 animate-fade-up">
+          <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground mb-4 animate-fade-up">
             Our Modules
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-up-delay-1">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up-delay-1">
             Ten evidence-based psychology modules designed to create lasting change — from classrooms to boardrooms.
           </p>
         </div>
@@ -29,54 +32,45 @@ const Modules = () => {
 
       {/* Module grid */}
       <section className="py-20">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {modules.map((mod) => (
-              <div
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {modules.map((mod, i) => (
+              <Link
                 key={mod.number}
-                className="bg-card rounded-2xl border border-border overflow-hidden hover-lift group"
+                to={`/modules/${mod.number}`}
+                className="group relative bg-card rounded-2xl border border-border overflow-hidden hover-lift"
               >
-                {/* Wave decoration at top */}
-                <div className="h-2 bg-gradient-to-r from-primary via-primary/60 to-primary/30" />
-                
-                <div className="p-6">
+                {/* Gradient top bar */}
+                <div className="h-2 bg-gradient-to-r from-primary via-accent/60 to-primary/30" />
+
+                {/* Decorative wave in background */}
+                <svg className="absolute bottom-0 right-0 w-32 h-32 opacity-[0.06]" viewBox="0 0 200 200">
+                  <path d="M0,100 C50,150 100,50 150,100 C175,125 190,110 200,100 L200,200 L0,200Z" fill="hsl(var(--accent))" />
+                </svg>
+
+                <div className="relative p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-semibold tracking-widest uppercase text-accent">
+                    <span className="inline-block px-3 py-1 rounded-full bg-accent/15 text-accent text-xs font-semibold tracking-wide">
                       Module {mod.number}
                     </span>
-                    <button
-                      onClick={() => setExpanded(expanded === mod.number ? null : mod.number)}
-                      className="text-muted-foreground hover:text-foreground transition-colors"
-                      aria-label="Toggle details"
-                    >
-                      <ChevronDown
-                        size={20}
-                        className={`transition-transform duration-300 ${expanded === mod.number ? "rotate-180" : ""}`}
-                      />
-                    </button>
+                    <ArrowRight
+                      size={18}
+                      className="text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all"
+                    />
                   </div>
-                  <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                  <h3 className="font-display text-xl font-semibold text-foreground mb-2 group-hover:text-teal-deep transition-colors">
                     {mod.name}
                   </h3>
-
-                  {expanded === mod.number && (
-                    <div className="animate-fade-up">
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                        {mod.desc}
-                      </p>
-                      <button className="text-sm font-medium text-accent hover:underline">
-                        Learn More →
-                      </button>
-                    </div>
-                  )}
-
-                  {expanded !== mod.number && (
-                    <p className="text-sm text-muted-foreground line-clamp-2">
-                      {mod.desc}
-                    </p>
-                  )}
+                  <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2 mb-4">
+                    {mod.shortDesc}
+                  </p>
+                  <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                    <span>{mod.duration}</span>
+                    <span className="w-1 h-1 rounded-full bg-muted-foreground/40" />
+                    <span>{mod.audience}</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
