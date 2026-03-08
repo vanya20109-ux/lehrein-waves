@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import About from "./pages/About";
 import GetInvolved from "./pages/GetInvolved";
 import Modules from "./pages/Modules";
+import ModuleDetail from "./pages/ModuleDetail";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -26,6 +27,7 @@ const App = () => (
               <Route path="/" element={<About />} />
               <Route path="/get-involved" element={<GetInvolved />} />
               <Route path="/modules" element={<Modules />} />
+              <Route path="/modules/:id" element={<ModuleDetail />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
