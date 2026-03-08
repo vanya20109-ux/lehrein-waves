@@ -51,6 +51,22 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        navy: {
+          DEFAULT: "hsl(var(--navy))",
+          foreground: "hsl(var(--navy-foreground))",
+        },
+        indigo: {
+          DEFAULT: "hsl(var(--indigo))",
+          foreground: "hsl(var(--indigo-foreground))",
+        },
+        steel: {
+          DEFAULT: "hsl(var(--steel))",
+          foreground: "hsl(var(--steel-foreground))",
+        },
+        foam: {
+          DEFAULT: "hsl(var(--foam))",
+          foreground: "hsl(var(--foam-foreground))",
+        },
         "teal-deep": {
           DEFAULT: "hsl(var(--teal-deep))",
           foreground: "hsl(var(--teal-deep-foreground))",
