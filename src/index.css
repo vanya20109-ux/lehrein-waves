@@ -15,7 +15,7 @@
     --popover: 40 30% 97%;
     --popover-foreground: 220 45% 16%;
 
-    --primary: 215 50% 30%;
+    --primary: 215 65% 35%;
     --primary-foreground: 40 30% 96%;
 
     --secondary: 210 25% 88%;
@@ -36,18 +36,23 @@
 
     --radius: 0.75rem;
 
-    /* Kanagawa palette */
-    --navy: 220 50% 15%;
+    /* Kanagawa palette — vibrant */
+    --navy: 220 60% 13%;
     --navy-foreground: 40 30% 94%;
-    --indigo: 215 48% 25%;
+    --indigo: 218 58% 22%;
     --indigo-foreground: 40 30% 94%;
-    --steel: 214 42% 50%;
+    --steel: 214 55% 48%;
     --steel-foreground: 40 30% 97%;
     --foam: 40 33% 93%;
     --foam-foreground: 220 45% 16%;
 
-    --teal-deep: 220 50% 15%;
+    --teal-deep: 220 60% 13%;
     --teal-deep-foreground: 40 30% 94%;
+
+    /* Kintsugi gold */
+    --kintsugi-gold: 42 80% 55%;
+    --kintsugi-light: 45 90% 70%;
+    --kintsugi-gold-foreground: 220 60% 13%;
 
     --sidebar-background: 40 30% 96%;
     --sidebar-foreground: 220 45% 16%;
@@ -79,16 +84,19 @@
     --border: 220 25% 18%;
     --input: 220 25% 18%;
     --ring: 214 42% 55%;
-    --navy: 220 50% 12%;
+    --navy: 220 60% 10%;
     --navy-foreground: 40 30% 94%;
-    --indigo: 215 48% 20%;
+    --indigo: 218 58% 18%;
     --indigo-foreground: 40 30% 94%;
-    --steel: 214 42% 45%;
+    --steel: 214 55% 42%;
     --steel-foreground: 40 30% 97%;
     --foam: 40 20% 15%;
     --foam-foreground: 40 25% 92%;
-    --teal-deep: 220 50% 12%;
+    --teal-deep: 220 60% 10%;
     --teal-deep-foreground: 40 30% 94%;
+    --kintsugi-gold: 42 80% 55%;
+    --kintsugi-light: 45 90% 70%;
+    --kintsugi-gold-foreground: 40 30% 94%;
     --sidebar-background: 220 45% 7%;
     --sidebar-foreground: 40 25% 92%;
     --sidebar-primary: 214 42% 55%;
