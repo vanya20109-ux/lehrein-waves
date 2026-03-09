@@ -44,11 +44,11 @@ export const modules: Module[] = [
     sessionStructure: [
       "Welcome & Warm-up (10 mins) — Introduce shadow play, demonstrate basic puppets, share brief Tholpavakoothu history",
       "Puppet Creation (15 mins) — Children design and cut out their own shadow figures representing characters or emotions",
-      "Story Building (10 mins) — In small groups, children plan a short narrative using their puppets",
+      "Story Building (10 mins) — In small groups, children plan a short narrative using their puppets - What is the shadow carrying? What does it represent?",
       "Performance & Projection (15 mins) — Groups take turns performing behind the screen, projecting their stories",
-      "Reflection & Sharing (10 mins) — Group discussion about what the stories meant, how it felt to perform, and what emotions came up",
+      "Reflection & Sharing (10 mins) — Discussion: what did you feel when the shadow spoke? What did your puppet say today that maybe you haven't been able to say as yourself yet?",
     ],
-    whatChildrenProduce: "Each child creates their own shadow puppet character from cardstock, which they keep. Groups produce a collaborative shadow play performance that is unique to their emotional experience. Children also create a brief illustrated story map of their narrative.",
+    whatChildrenProduce: "•      A cardboard shadow puppet with a name and a carried weight\n•      A 2-minute story performed in silhouette\n•      Experience of watching and being witnessed through safe distance",
     expectedOutcomes: [
       "Children externalize difficult emotions through puppet characters",
       "Improved ability to articulate feelings through metaphor and story",
