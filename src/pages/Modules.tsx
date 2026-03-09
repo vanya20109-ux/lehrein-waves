@@ -39,12 +39,12 @@ const Modules = () => {
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {modules.map((mod) => (
-              <Link
-                key={mod.number}
-                to={`/modules/${mod.number}`}
-                className="group relative bg-card/80 rounded-2xl border border-navy/10 overflow-hidden hover-lift"
-              >
+            {modules.map((mod) =>
+            <Link
+              key={mod.number}
+              to={`/modules/${mod.number}`}
+              className="group relative bg-card/80 rounded-2xl border border-navy/10 overflow-hidden hover-lift">
+              
                 {/* Gradient top — deep ocean to foam */}
                 <div className="h-2 bg-gradient-to-r from-navy via-primary to-steel/50" />
 
@@ -60,14 +60,14 @@ const Modules = () => {
                       Module {mod.number}
                     </span>
                     <ArrowRight
-                      size={18}
-                      className="text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all"
-                    />
+                    size={18}
+                    className="text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all" />
+                  
                   </div>
                   <h3 className="font-display text-xl font-semibold text-foreground mb-2 group-hover:text-navy transition-colors">
                     {mod.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2 mb-4">
+                  <p className="text-muted-foreground leading-relaxed line-clamp-2 mb-4 bg-indigo-100 text-xs">
                     {mod.shortDesc}
                   </p>
                   <div className="flex items-center gap-4 text-xs text-muted-foreground">
@@ -77,12 +77,12 @@ const Modules = () => {
                   </div>
                 </div>
               </Link>
-            ))}
+            )}
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Modules;
