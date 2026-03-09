@@ -50,7 +50,7 @@ export const modules: Module[] = [
     ],
     whatChildrenProduce: "•      A cardboard shadow puppet with a name and a carried weight\n•      A 2-minute story performed in silhouette\n•      Experience of watching and being witnessed through safe distance",
     expectedOutcomes: [
-      "Children externalize difficult emotions through puppet characters",
+      "Difficult material approached safely through projection",
       "Improved ability to articulate feelings through metaphor and story",
       "Enhanced group collaboration and active listening skills",
       "Increased confidence in creative self-expression",
