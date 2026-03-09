@@ -11,8 +11,8 @@ export interface Module {
 export const modules: Module[] = [
   {
     number: 1,
-    name: "Art Therapy",
-    shortDesc: "Explore the intersection of creative expression and psychological healing through guided art-based interventions.",
+    name: "Shadow Puppetry",
+    shortDesc: "Explore Shadow Puppetry, a dying Tholpavakoothu Tradition through safe storytelling, projection, emotional distance",
     fullDesc: "This module uses art-based interventions to help participants process emotions, reduce stress, and build self-awareness. Through painting, collage, sculpting, and free drawing, participants explore their inner world in a safe, non-judgmental environment. Art therapy bypasses verbal barriers and allows deeper emotional expression.",
     objectives: ["Process complex emotions through creative outlets", "Reduce stress and anxiety via art-making", "Build self-awareness and emotional vocabulary", "Develop healthy coping mechanisms"],
     duration: "6 weeks",
