@@ -5,11 +5,16 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
 import About from "./pages/About";
-import GetInvolved from "./pages/GetInvolved";
-import Modules from "./pages/Modules";
-import ModuleDetail from "./pages/ModuleDetail";
+import Chapters from "./pages/Chapters";
+import Resources from "./pages/Resources";
+import Blog from "./pages/Blog";
+import Forum from "./pages/Forum";
+import JoinUs from "./pages/JoinUs";
+import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import ModuleDetail from "./pages/ModuleDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,11 +29,16 @@ const App = () => (
           <Navbar />
           <main className="flex-1">
             <Routes>
-              <Route path="/" element={<About />} />
-              <Route path="/get-involved" element={<GetInvolved />} />
-              <Route path="/modules" element={<Modules />} />
-              <Route path="/modules/:id" element={<ModuleDetail />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/chapters" element={<Chapters />} />
+              <Route path="/resources" element={<Resources />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/forum" element={<Forum />} />
+              <Route path="/join" element={<JoinUs />} />
+              <Route path="/gallery" element={<Gallery />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/modules/:id" element={<ModuleDetail />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
