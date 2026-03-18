@@ -1,35 +1,22 @@
-# Welcome to Lehrein — The Psychology Association
+# Lehrein — The Psychology Association
 
-## Project info
+Lehrein is a student-led, chapter-based network that makes psychology education accessible, experiential, and interdisciplinary for high school students across India. We blend psychology with music, film, behavioral economics, public health, design, and literature so students learn to use psychology as a lens—not just a textbook.
 
-**URL**: https://REPLACE_WITH_PROJECT_URL
+## Platform & Programming
 
-## How can I edit this code?
+- **Digital platform:** lehreinindia.com hosts the curriculum library, curated blog, discussion forum, and chapter resources that every chapter can access.
+- **Chapter labs:** Monthly virtual trainings led by Vanya and the national leadership team cover facilitation skills, ethics, and the upcoming module theme.
+- **Core modules:** Pre-designed sessions (Music and Emotional Regulation, Personality Tests & Cognitive Styles, Behavioral Economics, Cognitive Biases in Social Media, Psychology of Conformity in Film, Art Therapy & Creative Expression) come with objectives, materials, reflection prompts, and ethical guardrails.
+- **Community rituals:** A student-authored blog, discussion board, and an annual virtual summit keep chapters connected, inspired, and accountable.
 
-There are several ways of editing your application locally or through GitHub.
-
-### Local workflow
+## Getting started locally
 
 1. Clone the repository: `git clone <YOUR_GIT_URL>`
 2. Enter the project directory: `cd <YOUR_PROJECT_NAME>`
-3. Install the dependencies: `npm install`
-4. Start the development server: `npm run dev`
+3. Install dependencies: `npm install` (or `bun install`)
+4. Start the dev server: `npm run dev`
 
-The dev server will reload when you change any source files.
-
-### GitHub editing
-
-- Navigate to the desired file in the repository.
-- Click the pencil icon to start editing in the browser.
-- Commit the changes once you are satisfied.
-
-### GitHub Codespaces (if available)
-
-- Click the **Code** button on the repository main page.
-- Select the **Codespaces** tab and create a new codespace.
-- Work directly inside the codespace and push your changes when ready.
-
-## What technologies are used for this project?
+## Stack
 
 - Vite
 - TypeScript
@@ -37,10 +24,6 @@ The dev server will reload when you change any source files.
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Deployment
 
 Run `npm run build` to bundle the project and serve the production build with `npm run preview` or your preferred hosting solution.
-
-## Can I connect a custom domain?
-
-Yes. Configure your hosting provider to point the domain to your deployment and update any DNS records required by the platform you choose. Refer to the platform guides for the exact steps.

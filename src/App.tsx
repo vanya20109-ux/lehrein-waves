@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Chapters from "./pages/Chapters";
 import Resources from "./pages/Resources";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Forum from "./pages/Forum";
 import JoinUs from "./pages/JoinUs";
 import Gallery from "./pages/Gallery";
@@ -34,6 +35,7 @@ const App = () => (
               <Route path="/chapters" element={<Chapters />} />
               <Route path="/resources" element={<Resources />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:id" element={<BlogPost />} />
               <Route path="/forum" element={<Forum />} />
               <Route path="/join" element={<JoinUs />} />
               <Route path="/gallery" element={<Gallery />} />

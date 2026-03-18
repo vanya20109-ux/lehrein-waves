@@ -1,4 +1,4 @@
-import { Award, Users, Heart, BookOpen } from "lucide-react";
+import { Award, Users, Heart, BookOpen, Sparkles, Globe } from "lucide-react";
 import WaveDivider from "@/components/WaveDivider";
 
 const teamMembers = [
@@ -17,14 +17,44 @@ const About = () => {
     <div className="overflow-hidden">
       {/* Hero */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-foam/60 via-background to-background -z-10" />
+        <div className="absolute inset-0 bg-white -z-10" />
         <div className="container mx-auto px-4 text-center animate-fade-up">
           <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground mb-6">
             About Lehrein
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Founded by students, for everyone — Lehrein is building a national movement to make psychology accessible through art, culture, and community.
+            Lehrein is a student-led network bringing experiential psychology to high schoolers through chapters, a digital curriculum hub, and interdisciplinary programming across music, film, economics, design, and literature.
           </p>
+        </div>
+      </section>
+
+      {/* Mission & Vision */}
+      <section className="py-16 bg-[#f8f8fb]">
+        <div className="container mx-auto px-4 max-w-6xl grid gap-10 md:grid-cols-2">
+          <div className="rounded-3xl border border-navy/10 bg-white p-8 shadow-sm">
+            <div className="flex items-center gap-3 mb-3">
+              <Sparkles size={20} className="text-primary" />
+              <h2 className="font-display text-2xl font-semibold text-foreground">Mission</h2>
+            </div>
+            <p className="text-muted-foreground leading-relaxed text-sm">
+              Equip student leaders with structured modules, facilitation playbooks, and a national platform so they can teach psychology through music, film, economics, public health, and design.
+            </p>
+            <p className="text-muted-foreground leading-relaxed text-sm mt-4">
+              Chapters access lehreinindia.com for curriculum, blog articles, forum discussions, and shared resources that keep the national community connected.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-navy/10 bg-white p-8 shadow-sm">
+            <div className="flex items-center gap-3 mb-3">
+              <Globe size={20} className="text-navy" />
+              <h2 className="font-display text-2xl font-semibold text-foreground">Vision</h2>
+            </div>
+            <p className="text-muted-foreground leading-relaxed text-sm">
+              Build a validated network of 12–15 chapters across eight cities, supported by co-leads, partner endorsements, and documented impact for every student story.
+            </p>
+            <p className="text-muted-foreground leading-relaxed text-sm mt-4">
+              We imagine a future where high schoolers publish psychology articles, host inter-school forums, and collaborate on an annual summit that showcases their work.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -68,7 +98,7 @@ const About = () => {
       <WaveDivider />
 
       {/* National Leadership Team */}
-      <section className="py-20 bg-gradient-to-b from-navy/5 to-background">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-14">
             <div className="w-12 h-12 rounded-xl bg-navy/10 flex items-center justify-center mx-auto mb-4">

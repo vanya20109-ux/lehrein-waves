@@ -18,13 +18,7 @@ const Contact = () => {
       {/* Hero */}
       <section className="relative py-28 overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-b from-navy/10 via-primary/6 to-background" />
-          <svg className="absolute bottom-0 w-full" viewBox="0 0 1440 200" preserveAspectRatio="none">
-            <path d="M0,120 C200,80 360,60 500,100 C640,140 720,150 860,120 C1000,90 1100,60 1240,100 C1340,125 1400,140 1440,130 L1440,200 L0,200Z" fill="hsl(var(--navy))" opacity="0.1" />
-            <path d="M0,150 C240,130 480,115 720,140 C960,165 1200,130 1440,150 L1440,200 L0,200Z" fill="hsl(var(--primary))" opacity="0.06" />
-            <path d="M440,102 C465,88 490,82 515,90" stroke="hsl(var(--foam))" strokeWidth="2" fill="none" opacity="0.3" />
-          </svg>
-          <Waves className="absolute top-16 left-[12%] text-navy/10 animate-sway" size={44} />
+          <div className="absolute inset-0 bg-white" />
         </div>
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground mb-4 animate-fade-up">
@@ -84,7 +78,7 @@ const Contact = () => {
                 <div className="space-y-4">
                   {[
                     { icon: Mail, label: "Email", value: "hello@lehrein.org" },
-                    { icon: Phone, label: "Phone", value: "+91 98765 43210" },
+                    { icon: Phone, label: "Phone", value: "+91 XXXX XXXX" },
                     { icon: MapPin, label: "Location", value: "New Delhi, India" },
                   ].map((item) => (
                     <div key={item.label} className="flex items-start gap-3">
@@ -101,18 +95,25 @@ const Contact = () => {
               </div>
 
               {/* Map placeholder with Kanagawa wave decoration */}
-              <div className="relative bg-card/80 rounded-2xl border border-navy/10 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-navy/8 to-steel/5" />
-                <svg className="absolute bottom-0 w-full opacity-20" viewBox="0 0 400 80" preserveAspectRatio="none">
-                  <path d="M0,40 C60,20 120,10 180,25 C240,40 280,55 340,40 C370,33 390,25 400,28 L400,80 L0,80Z" fill="hsl(var(--navy))" />
-                  <path d="M150,28 C165,20 180,16 195,22" stroke="hsl(var(--foam))" strokeWidth="1.5" fill="none" opacity="0.4" />
-                </svg>
-                <div className="relative h-48 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin size={32} className="text-navy mx-auto mb-2" />
-                    <p className="text-sm font-medium text-foreground">New Delhi, India</p>
-                    <p className="text-xs text-muted-foreground mt-1">Map placeholder</p>
-                  </div>
+              <div className="relative overflow-hidden rounded-2xl border border-navy/10 bg-card/80 shadow-sm">
+                <iframe
+                  title="New Delhi, India map"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=77.1190%2C28.5345%2C77.2340%2C28.6354&amp;layer=mapnik"
+                  className="h-56 w-full"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+                <div className="px-4 pb-3 pt-2 text-sm text-muted-foreground">
+                  <p className="font-semibold text-foreground">New Delhi, India</p>
+                  <a
+                    href="https://www.openstreetmap.org/#map=13/28.5850/77.1765"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs text-primary underline"
+                  >
+                    View on OpenStreetMap
+                  </a>
                 </div>
               </div>
             </div>

@@ -50,7 +50,7 @@ const ModuleDetail = () => {
       {/* Hero */}
       <section className="relative py-28 overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-br from-navy/12 via-steel/8 to-background" />
+          <div className="absolute inset-0 bg-white" />
           <svg className="absolute bottom-0 w-full opacity-40" viewBox="0 0 1440 200" preserveAspectRatio="none">
             <path d="M0,100 C200,60 360,40 500,80 C640,120 720,140 860,110 C1000,80 1100,50 1240,90 C1340,115 1400,130 1440,120 L1440,200 L0,200Z" fill="hsl(var(--navy))" opacity="0.15" />
             <path d="M0,140 C160,120 320,100 480,125 C640,150 760,160 920,140 C1080,120 1200,105 1360,130 L1440,135 L1440,200 L0,200Z" fill="hsl(var(--primary))" opacity="0.08" />

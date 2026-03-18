@@ -6,13 +6,13 @@ const Forum = () => {
     <div className="overflow-hidden">
       {/* Hero */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-foam/60 via-background to-background -z-10" />
+        <div className="absolute inset-0 bg-white -z-10" />
         <div className="container mx-auto px-4 text-center animate-fade-up">
           <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground mb-6">
             Community Forum
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Connect with fellow chapter heads, facilitators, and students across the Lehrein network.
+            Connect with chapter heads, facilitators, and students expanding Lehrein across cities. Use the forum to exchange module feedback, share interdisciplinary insights, and mentor new leads.
           </p>
         </div>
       </section>
@@ -45,7 +45,7 @@ const Forum = () => {
       <WaveDivider />
 
       {/* Channels Preview */}
-      <section className="py-20 bg-gradient-to-b from-navy/5 to-background">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="font-display text-3xl font-bold text-foreground mb-8 text-center">
             Discussion Channels

@@ -1,87 +1,64 @@
-import { ClipboardList, UserPlus, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ClipboardList, ArrowRight, CheckCircle2 } from "lucide-react";
 import WaveDivider from "@/components/WaveDivider";
-
-const benefits = [
-  "Access to all Lehrein modules and facilitation guides",
-  "Training and onboarding for chapter leads",
-  "National network of student psychologists",
-  "Certificate of leadership and community service",
-  "Mentorship from Lehrein's advisory board",
-  "Opportunities to present at national events",
-];
 
 const JoinUs = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-foam/60 via-background to-background -z-10" />
+        <div className="absolute inset-0 bg-white -z-10" />
         <div className="container mx-auto px-4 text-center animate-fade-up">
           <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground mb-6">
             Join Us
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Start a Lehrein chapter at your institution or sign up as a member. Be part of the wave.
+            Launch a Lehrein chapter and plug into our digital platform, monthly trainings, and interdisciplinary modules. Apply now and start running the national curriculum with support.
           </p>
         </div>
       </section>
 
       {/* Two paths */}
       <section className="py-20">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Chapter Application */}
-            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 border border-navy/10 hover-lift animate-fade-up">
-              <div className="w-14 h-14 rounded-2xl bg-navy/10 flex items-center justify-center mb-5">
-                <ClipboardList size={28} className="text-navy" />
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="bg-card/80 backdrop-blur-sm rounded-[36px] p-10 border border-navy/10 shadow-xl animate-fade-up">
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-3">
+                <div className="w-14 h-14 rounded-2xl bg-navy/10 flex items-center justify-center">
+                  <ClipboardList size={28} className="text-navy" />
+                </div>
+                <div>
+                  <h2 className="font-display text-3xl font-bold text-foreground">Start a Chapter</h2>
+                  <p className="text-sm text-muted-foreground">
+                    Apply to launch a Lehrein chapter at your college, school, or community organization. We provide the curriculum, trainings, and facilitation support you need to run psychology modules with confidence.
+                  </p>
+                </div>
               </div>
-              <h2 className="font-display text-2xl font-bold text-foreground mb-3">
-                Start a Chapter
-              </h2>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Apply to launch a Lehrein chapter at your college, school, or community organization. We provide all the resources, training, and support you need.
-              </p>
-              <ul className="space-y-2 mb-6">
-                {benefits.slice(0, 3).map((b) => (
-                  <li key={b} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <CheckCircle2 size={16} className="text-primary mt-0.5 shrink-0" />
-                    {b}
-                  </li>
-                ))}
+              <ul className="grid gap-3 text-sm text-muted-foreground md:grid-cols-2">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 size={16} className="text-primary mt-0.5 shrink-0" />
+                  Access to all Lehrein modules and facilitation guides
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 size={16} className="text-primary mt-0.5 shrink-0" />
+                  Training and onboarding for chapter leads
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 size={16} className="text-primary mt-0.5 shrink-0" />
+                  National network of student psychologists sharing reflections
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 size={16} className="text-primary mt-0.5 shrink-0" />
+                  Monthly virtual labs that coach facilitation, ethics, and storytelling
+                </li>
               </ul>
-              <a
-                href="#chapter-form"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-navy text-navy-foreground font-semibold shadow-lg hover:shadow-xl hover:bg-navy/90 transition-all text-sm"
-              >
-                Apply Now <ArrowRight size={16} />
-              </a>
-            </div>
-
-            {/* Member Sign-up */}
-            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 border border-navy/10 hover-lift animate-fade-up-delay-1">
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5">
-                <UserPlus size={28} className="text-primary" />
+              <div className="flex justify-end">
+                <a
+                  href="#chapter-form"
+                  className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-navy text-navy-foreground font-semibold shadow-lg hover:shadow-xl hover:bg-navy/90 transition-all"
+                >
+                  Apply Now <ArrowRight size={16} />
+                </a>
               </div>
-              <h2 className="font-display text-2xl font-bold text-foreground mb-3">
-                Become a Member
-              </h2>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Join as an individual member to participate in sessions, access resources, and connect with the Lehrein community nationwide.
-              </p>
-              <ul className="space-y-2 mb-6">
-                {benefits.slice(3).map((b) => (
-                  <li key={b} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <CheckCircle2 size={16} className="text-primary mt-0.5 shrink-0" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#member-form"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-navy/20 text-foreground font-semibold hover:bg-navy/5 transition-all text-sm"
-              >
-                Sign Up <ArrowRight size={16} />
-              </a>
             </div>
           </div>
         </div>
@@ -90,7 +67,7 @@ const JoinUs = () => {
       <WaveDivider />
 
       {/* Embedded Google Form placeholder */}
-      <section id="chapter-form" className="py-20 bg-gradient-to-b from-navy/5 to-background">
+      <section id="chapter-form" className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="font-display text-3xl font-bold text-foreground mb-4 text-center">
             Chapter Application Form
@@ -116,45 +93,6 @@ const JoinUs = () => {
         </div>
       </section>
 
-      {/* Member Sign-up Form */}
-      <section id="member-form" className="py-20">
-        <div className="container mx-auto px-4 max-w-2xl">
-          <h2 className="font-display text-3xl font-bold text-foreground mb-4 text-center">
-            Member Sign-Up
-          </h2>
-          <p className="text-muted-foreground text-center mb-8">
-            Join the Lehrein community as an individual member.
-          </p>
-          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 border border-navy/10">
-            <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1.5">Full Name</label>
-                  <input type="text" className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30" placeholder="Your name" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-1.5">Email</label>
-                  <input type="email" className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30" placeholder="you@example.com" />
-                </div>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-1.5">Institution / Organization</label>
-                <input type="text" className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30" placeholder="Your college, school, or organization" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-1.5">Why do you want to join Lehrein?</label>
-                <textarea rows={4} className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 resize-none" placeholder="Tell us about your interest in psychology and mental health..." />
-              </div>
-              <button
-                type="submit"
-                className="w-full py-3 rounded-xl bg-navy text-navy-foreground font-semibold shadow-lg hover:shadow-xl hover:bg-navy/90 transition-all"
-              >
-                Submit Application
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
