@@ -4,40 +4,36 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-navy text-navy-foreground">
-      {/* Kanagawa wave top */}
       <div className="w-full overflow-hidden leading-[0]">
         <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full h-16">
-          {/* Curling wave crests */}
           <path d="M0,60 C120,30 240,10 360,30 C480,50 540,70 660,50 C780,30 840,10 960,30 C1080,50 1140,70 1260,50 C1340,38 1400,25 1440,30 L1440,100 L0,100Z" fill="hsl(var(--navy))" />
           <path d="M0,70 C160,45 320,25 480,45 C640,65 720,80 880,60 C1040,40 1120,25 1280,45 C1380,55 1420,60 1440,55 L1440,100 L0,100Z" fill="hsl(var(--navy))" opacity="0.7" />
-          {/* Foam lines */}
-          <path d="M300,35 C330,28 360,25 390,28 C410,30 420,35 430,38" stroke="hsl(var(--foam))" strokeWidth="1.5" fill="none" opacity="0.3" />
-          <path d="M900,35 C930,28 960,25 990,28 C1010,30 1020,35 1030,38" stroke="hsl(var(--foam))" strokeWidth="1.5" fill="none" opacity="0.25" />
         </svg>
       </div>
 
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Brand */}
           <div>
             <h3 className="font-display text-2xl font-bold mb-3">Lehrein</h3>
             <p className="text-navy-foreground/70 text-sm leading-relaxed max-w-xs">
-              Waves of change — bringing psychology-driven wellness programs to colleges, corporates, communities, and schools worldwide.
+              Waves of change — bringing psychology-driven wellness programs to schools, colleges, communities, and corporates across India.
             </p>
           </div>
 
-          {/* Quick links */}
           <div>
             <h4 className="font-display text-lg font-semibold mb-3">Quick Links</h4>
             <div className="flex flex-col gap-2">
-              <Link to="/" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">About Lehrein</Link>
-              <Link to="/get-involved" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Get Involved</Link>
-              <Link to="/modules" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Modules</Link>
-              <Link to="/contact" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Contact Us</Link>
+              <Link to="/" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Home</Link>
+              <Link to="/about" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">About</Link>
+              <Link to="/chapters" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Chapters</Link>
+              <Link to="/resources" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Resources</Link>
+              <Link to="/blog" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Blog</Link>
+              <Link to="/join" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Join Us</Link>
+              <Link to="/gallery" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Gallery</Link>
+              <Link to="/contact" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Contact</Link>
             </div>
           </div>
 
-          {/* Contact */}
           <div>
             <h4 className="font-display text-lg font-semibold mb-3">Contact</h4>
             <div className="flex flex-col gap-2 text-sm text-navy-foreground/70">

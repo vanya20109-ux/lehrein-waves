@@ -3,10 +3,15 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { to: "/", label: "About Lehrein" },
-  { to: "/get-involved", label: "Get Involved" },
-  { to: "/modules", label: "Modules" },
-  { to: "/contact", label: "Contact Us" },
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/chapters", label: "Chapters" },
+  { to: "/resources", label: "Resources" },
+  { to: "/blog", label: "Blog" },
+  { to: "/forum", label: "Forum" },
+  { to: "/gallery", label: "Gallery" },
+  { to: "/join", label: "Join Us" },
+  { to: "/contact", label: "Contact" },
 ];
 
 const Navbar = () => {
@@ -20,21 +25,21 @@ const Navbar = () => {
           <span className="font-display text-2xl font-bold text-navy tracking-tight">
             Lehrein
           </span>
-          <span className="hidden sm:inline text-xs text-muted-foreground font-sans mt-1">
+          <span className="hidden lg:inline text-xs text-muted-foreground font-sans mt-1">
             The Psychology Association
           </span>
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-0.5">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+              className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                 location.pathname === link.to
                   ? "bg-navy/10 text-navy"
-                  : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                  : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
               }`}
             >
               {link.label}
@@ -44,7 +49,7 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden p-2 text-foreground"
+          className="lg:hidden p-2 text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -54,7 +59,7 @@ const Navbar = () => {
 
       {/* Mobile nav */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-border bg-background px-4 pb-4">
+        <div className="lg:hidden border-t border-border bg-background px-4 pb-4">
           {navLinks.map((link) => (
             <Link
               key={link.to}
