@@ -11,7 +11,7 @@ const Resources = () => (
           Resources
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Every chapter accesses the same six core modules—music, tests, economics, cognitive bias, film, and art therapy—each bundled with materials, facilitation tips, and reflection prompts.
+          Every chapter accesses the same six core modules (music, tests, economics, cognitive bias, film, and art therapy), each bundled with materials, facilitation tips, and reflection prompts.
         </p>
       </div>
     </section>

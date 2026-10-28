@@ -1,9 +1,10 @@
-import { Award, Users, Heart, BookOpen, Sparkles, Globe } from "lucide-react";
+import { Award, Users, BookOpen, Sparkles, Globe } from "lucide-react";
+import KanagawaWave from "@/components/KanagawaWave";
 import WaveDivider from "@/components/WaveDivider";
 
 const teamMembers = [
-  { name: "Team Member 1", role: "Chapter Lead — Delhi", bio: "Psychology student passionate about community mental health." },
-  { name: "Team Member 2", role: "Chapter Lead — Mumbai", bio: "Advocate for accessible therapy and creative wellness." },
+  { name: "Team Member 1", role: "Chapter Lead, Delhi", bio: "Psychology student passionate about community mental health." },
+  { name: "Team Member 2", role: "Chapter Lead, Mumbai", bio: "Advocate for accessible therapy and creative wellness." },
   { name: "Team Member 3", role: "Content & Research", bio: "Researcher focused on culturally rooted therapeutic techniques." },
 ];
 
@@ -27,6 +28,8 @@ const About = () => {
           </p>
         </div>
       </section>
+
+      <KanagawaWave />
 
       {/* Mission & Vision */}
       <section className="py-16 bg-[#f8f8fb]">
@@ -61,18 +64,8 @@ const About = () => {
       {/* Vanya's Bio */}
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid md:grid-cols-[300px_1fr] gap-10 items-start">
+          <div>
             <div className="animate-fade-up">
-              <div className="w-full aspect-square rounded-2xl bg-gradient-to-br from-navy/15 to-steel/10 flex items-center justify-center border border-navy/10">
-                <div className="text-center">
-                  <div className="w-20 h-20 rounded-full bg-navy/10 flex items-center justify-center mx-auto mb-3">
-                    <Heart size={32} className="text-navy" />
-                  </div>
-                  <p className="text-sm text-muted-foreground">Photo coming soon</p>
-                </div>
-              </div>
-            </div>
-            <div className="animate-fade-up-delay-1">
               <div className="inline-block px-4 py-1.5 rounded-full bg-navy/10 text-navy text-sm font-semibold mb-4">
                 Founder & National President
               </div>
@@ -81,10 +74,10 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed text-lg">
                 <p>
-                  Vanya is the founder and driving force behind Lehrein — The Psychology Association. As a student deeply committed to making mental health education accessible, she envisioned a movement that goes beyond awareness campaigns to deliver real, evidence-based psychology programs.
+                  Vanya is the founder and driving force behind Lehrein: The Psychology Association. As a student deeply committed to making mental health education accessible, she envisioned a movement that goes beyond awareness campaigns to deliver real, evidence-based psychology programs.
                 </p>
                 <p>
-                  Under her leadership, Lehrein has designed culturally rooted modules — from shadow puppetry therapy inspired by Kerala's Tholpavakoothu tradition to community resilience workshops — and delivered them across schools and institutions.
+                  Under her leadership, Lehrein has designed culturally rooted modules, from shadow puppetry therapy inspired by Kerala's Tholpavakoothu tradition to community resilience workshops, and delivered them across schools and institutions.
                 </p>
                 <p>
                   Vanya's goal is to build a national network of student-led chapters, each empowered with professional-grade facilitation tools, so that psychology-driven wellness reaches every corner of India.
@@ -142,7 +135,7 @@ const About = () => {
               Advisory Partners
             </h2>
             <p className="text-muted-foreground max-w-lg mx-auto">
-              Expert guidance shaping Lehrein's programs — updated as partnerships are secured
+              Expert guidance shaping Lehrein's programs, updated as partnerships are secured
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">

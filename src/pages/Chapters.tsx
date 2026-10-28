@@ -1,6 +1,7 @@
 import IndiaMap from "@/components/IndiaMap";
-import { MapPin, Mail, Users } from "lucide-react";
+import { MapPin, Mail, Users, School } from "lucide-react";
 import WaveDivider from "@/components/WaveDivider";
+import KanagawaWave from "@/components/KanagawaWave";
 
 const chapters = [
   { city: "New Delhi", institution: "Heritage School", lead: "Vanya", email: "delhi@lehrein.org", active: true },
@@ -8,6 +9,12 @@ const chapters = [
   { city: "Bangalore", institution: "Coming Soon", lead: "TBD", email: "bangalore@lehrein.org", active: false },
   { city: "Kolkata", institution: "Coming Soon", lead: "TBD", email: "kolkata@lehrein.org", active: false },
   { city: "Chennai", institution: "Coming Soon", lead: "TBD", email: "chennai@lehrein.org", active: false },
+];
+
+const partnerSchools = [
+  { name: "KIIT-JEE Public School, Sector 9B", location: "Near Basai Flyover, Basai Village, Gurugram, Haryana", details: "Classes Nursery to 12, CBSE Affiliated" },
+  { name: "KIIT-JEE Public School, Sector 10", location: "Site No. 4, Sector 10, Gurugram, Haryana" },
+  { name: "KIIT-JEE Sr. Sec. School, Matanhail", location: "Jhajjar, Haryana" },
 ];
 
 const Chapters = () => {
@@ -25,6 +32,8 @@ const Chapters = () => {
           </p>
         </div>
       </section>
+
+      <KanagawaWave />
 
       {/* Interactive Map */}
       <section className="py-16">
@@ -80,6 +89,45 @@ const Chapters = () => {
           </div>
         </div>
       </section>
+
+      <WaveDivider flip />
+
+      {/* Partner Schools */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <div className="w-12 h-12 rounded-xl bg-navy/10 flex items-center justify-center mx-auto mb-4">
+              <School size={24} className="text-navy" />
+            </div>
+            <h2 className="font-display text-3xl font-bold text-foreground mb-3">
+              Our School Community
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Schools that are part of the Lehrein community
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {partnerSchools.map((school, i) => (
+              <div
+                key={school.name}
+                className={`bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-navy/10 hover-lift animate-fade-up-delay-${Math.min(i + 1, 3)}`}
+              >
+                <h3 className="font-display text-lg font-semibold text-foreground mb-2">{school.name}</h3>
+                <p className="flex items-start gap-1.5 text-sm text-muted-foreground">
+                  <MapPin size={14} className="text-primary mt-0.5 flex-shrink-0" /> {school.location}
+                </p>
+                {school.details && (
+                  <span className="inline-block mt-3 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
+                    {school.details}
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <WaveDivider />
     </div>
   );
 };

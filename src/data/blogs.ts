@@ -71,7 +71,7 @@ export const blogPosts: BlogPostSummary[] = [
       {
         heading: "Growing the discipline",
         body:
-          "We invite educators and community partners to co-design modules so psychology feels relevant to every subject — not just a standalone elective.",
+          "We invite educators and community partners to co-design modules so psychology feels relevant to every subject, not just a standalone elective.",
       },
     ],
   },

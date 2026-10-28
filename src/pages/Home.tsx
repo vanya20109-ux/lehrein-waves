@@ -184,7 +184,7 @@ const Home = () => (
         <div className="space-y-3 text-center">
           <h3 className="font-display text-3xl font-bold text-foreground">Who We Serve</h3>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Psychology as a lens for understanding identity, decision-making, and systems — not a subject reserved for exam prep. We show students how to apply those frameworks to music, film, policy, and everyday life.
+            Psychology as a lens for understanding identity, decision-making, and systems, not a subject reserved for exam prep. We show students how to apply those frameworks to music, film, policy, and everyday life.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">

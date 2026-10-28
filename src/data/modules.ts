@@ -42,10 +42,10 @@ export const modules: Module[] = [
       "Markers to map sound to feelings",
     ],
     sessionStructure: [
-      "Check-in & grounding (10 mins) — breath + gentle percussion",
-      "Sound mapping (15 mins) — students share how each clip landed in their body",
-      "Playlist creation (20 mins) — craft a 2-track sequence for a specific emotion",
-      "Share & closing circle (15 mins) — discuss takeaways and coping ideas",
+      "Check-in & grounding (10 mins): breath + gentle percussion",
+      "Sound mapping (15 mins): students share how each clip landed in their body",
+      "Playlist creation (20 mins): craft a 2-track sequence for a specific emotion",
+      "Share & closing circle (15 mins): discuss takeaways and coping ideas",
     ],
     whatChildrenProduce:
       "A collaborative playlist, a journaling snapshot, and a sonic map that links emotion words to musical cues.",
@@ -82,10 +82,10 @@ export const modules: Module[] = [
       "Sticky notes for action steps",
     ],
     sessionStructure: [
-      "Warm-up (10 mins) — quick pair intros about recent decisions",
-      "Assessment (15 mins) — complete short cognitive style quiz",
-      "Debrief (20 mins) — share takeaways in small groups, focus on surprises",
-      "Action planning (15 mins) — pair up to support each other using strengths",
+      "Warm-up (10 mins): quick pair intros about recent decisions",
+      "Assessment (15 mins): complete short cognitive style quiz",
+      "Debrief (20 mins): share takeaways in small groups, focus on surprises",
+      "Action planning (15 mins): pair up to support each other using strengths",
     ],
     whatChildrenProduce:
       "A one-page reflection template linking quiz takeaways to daily habits, plus peer accountability notes.",
@@ -120,10 +120,10 @@ export const modules: Module[] = [
       "Sticky dots for voting",
     ],
     sessionStructure: [
-      "Intro to nudges (15 mins) — analyze real examples",
-      "Intervention design (25 mins) — teams prototype a nudge for the school",
-      "Gallery walk (10 mins) — critique and celebrate",
-      "Reflection (10 mins) — discuss ethics and personal agency",
+      "Intro to nudges (15 mins): analyze real examples",
+      "Intervention design (25 mins): teams prototype a nudge for the school",
+      "Gallery walk (10 mins): critique and celebrate",
+      "Reflection (10 mins): discuss ethics and personal agency",
     ],
     whatChildrenProduce:
       "A mini nudge prototype (poster or script) plus an ethics checklist for future modules.",
@@ -158,10 +158,10 @@ export const modules: Module[] = [
       "Whiteboard for group notes",
     ],
     sessionStructure: [
-      "Bias primer (15 mins) — lightning talks on confirmation, availability, negativity",
-      "Feed audit (20 mins) — teams map a recent scroll session",
-      "Action plan (15 mins) — craft rituals to interrupt bias loops",
-      "Share-out (10 mins) — commitment statements",
+      "Bias primer (15 mins): lightning talks on confirmation, availability, negativity",
+      "Feed audit (20 mins): teams map a recent scroll session",
+      "Action plan (15 mins): craft rituals to interrupt bias loops",
+      "Share-out (10 mins): commitment statements",
     ],
     whatChildrenProduce:
       "A public awareness poster or short script plus personalized digital hygiene checklist.",
@@ -196,10 +196,10 @@ export const modules: Module[] = [
       "Markers",
     ],
     sessionStructure: [
-      "Clip viewing (15 mins) — watch short film excerpts",
-      "Analysis (15 mins) — annotate conformity cues",
-      "Rewrite (20 mins) — storyboard a revised ending",
-      "Debrief (10 mins) — discuss courage, agency",
+      "Clip viewing (15 mins): watch short film excerpts",
+      "Analysis (15 mins): annotate conformity cues",
+      "Rewrite (20 mins): storyboard a revised ending",
+      "Debrief (10 mins): discuss courage, agency",
     ],
     whatChildrenProduce:
       "A storyboard or script that imagines a character choosing differently from the crowd.",

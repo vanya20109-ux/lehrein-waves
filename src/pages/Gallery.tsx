@@ -2,7 +2,7 @@ import { Camera, ImageIcon } from "lucide-react";
 
 const galleryImages = [
   { caption: "Shadow Puppetry Workshop at Heritage School", event: "First Lehrein Session", date: "Nov 2024" },
-  { caption: "Students creating their puppet characters", event: "Module 1 — Shadow Puppetry", date: "Nov 2024" },
+  { caption: "Students creating their puppet characters", event: "Module 1: Shadow Puppetry", date: "Nov 2024" },
   { caption: "The shadow wall performance", event: "Heritage School", date: "Nov 2024" },
   { caption: "Group reflection after the session", event: "Heritage School", date: "Nov 2024" },
   { caption: "Facilitator training workshop", event: "Leadership Training", date: "Dec 2024" },

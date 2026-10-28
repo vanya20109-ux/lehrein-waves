@@ -1,6 +1,6 @@
-# Lehrein — The Psychology Association
+# Lehrein: The Psychology Association
 
-Lehrein is a student-led, chapter-based network that makes psychology education accessible, experiential, and interdisciplinary for high school students across India. We blend psychology with music, film, behavioral economics, public health, design, and literature so students learn to use psychology as a lens—not just a textbook.
+Lehrein is a student-led, chapter-based network that makes psychology education accessible, experiential, and interdisciplinary for high school students across India. We blend psychology with music, film, behavioral economics, public health, design, and literature so students learn to use psychology as a lens, not just a textbook.
 
 ## Platform & Programming
 

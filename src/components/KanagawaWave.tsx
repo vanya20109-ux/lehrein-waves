@@ -1,4 +1,4 @@
-/** Kanagawa-inspired great wave SVG — dramatic section divider with visible curling wave */
+/** Kanagawa-inspired great wave SVG: dramatic section divider with visible curling wave */
 const KanagawaWave = ({ className = "" }: { className?: string }) => {
   return (
     <div className={`w-full overflow-hidden leading-[0] ${className}`}>
@@ -9,13 +9,13 @@ const KanagawaWave = ({ className = "" }: { className?: string }) => {
         preserveAspectRatio="none"
         className="w-full h-32 md:h-48 lg:h-56"
       >
-        {/* Deep ocean base — darkest layer */}
+        {/* Deep ocean base: darkest layer */}
         <path
           d="M0,200 C120,160 200,100 360,130 C480,155 540,190 680,165 C780,148 840,100 960,120 C1080,140 1160,180 1280,155 C1360,140 1420,110 1440,120 L1440,260 L0,260Z"
           fill="hsl(var(--navy))"
           opacity="0.25"
         />
-        {/* Mid wave — the great curl body */}
+        {/* Mid wave: the great curl body */}
         <path
           d="M0,210 C80,180 160,130 300,155 C400,172 460,200 580,180 C680,163 740,120 860,145 C960,165 1020,195 1140,175 C1240,158 1320,125 1440,150 L1440,260 L0,260Z"
           fill="hsl(var(--primary))"
@@ -28,7 +28,7 @@ const KanagawaWave = ({ className = "" }: { className?: string }) => {
           opacity="0.15"
         />
 
-        {/* Wave curl — the Kanagawa signature spiral */}
+        {/* Wave curl: the Kanagawa signature spiral */}
         <path
           d="M260,150 C275,130 310,118 340,125 C360,130 370,145 365,158 C360,168 345,172 330,168 C320,165 315,155 320,148"
           stroke="hsl(var(--steel))"
@@ -51,7 +51,7 @@ const KanagawaWave = ({ className = "" }: { className?: string }) => {
           opacity="0.25"
         />
 
-        {/* Foam spray — frothy white tips flying off the crests */}
+        {/* Foam spray: frothy white tips flying off the crests */}
         <path
           d="M240,145 C260,135 285,128 310,132 C330,135 340,145 345,150"
           stroke="hsl(var(--foam))"

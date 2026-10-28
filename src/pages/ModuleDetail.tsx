@@ -171,8 +171,8 @@ const ModuleDetail = () => {
                 <div className="absolute left-[18px] top-4 bottom-4 w-0.5 bg-gradient-to-b from-navy/20 via-primary/15 to-navy/20" />
                 <div className="space-y-4">
                   {mod.sessionStructure.map((step, i) => {
-                  const [title, ...descParts] = step.split(" — ");
-                  const desc = descParts.join(" — ");
+                  const [title, ...descParts] = step.split(": ");
+                  const desc = descParts.join(": ");
                   return (
                     <div key={i} className="flex items-start gap-4 relative">
                         <div className="w-9 h-9 rounded-full bg-gradient-to-br from-navy/20 to-primary/15 flex items-center justify-center flex-shrink-0 z-10 border-2 border-background">

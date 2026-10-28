@@ -16,7 +16,7 @@ const Footer = () => {
           <div>
             <h3 className="font-display text-2xl font-bold mb-3">Lehrein</h3>
             <p className="text-navy-foreground/70 text-sm leading-relaxed max-w-xs">
-              Waves of change — bringing psychology-driven wellness programs to schools, colleges, communities, and corporates across India.
+              Waves of change, bringing psychology-driven wellness programs to schools, colleges, communities, and corporates across India.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-navy-foreground/15 mt-10 pt-6 text-center text-sm text-navy-foreground/50">
-          © {new Date().getFullYear()} Lehrein — The Psychology Association. All rights reserved.
+          © {new Date().getFullYear()} Lehrein: The Psychology Association. All rights reserved.
         </div>
       </div>
     </footer>
