@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -14,7 +14,6 @@ import BlogPost from "./pages/BlogPost";
 import Forum from "./pages/Forum";
 import JoinUs from "./pages/JoinUs";
 import Gallery from "./pages/Gallery";
-import Contact from "./pages/Contact";
 import ModuleDetail from "./pages/ModuleDetail";
 import NotFound from "./pages/NotFound";
 
@@ -39,7 +38,7 @@ const App = () => (
               <Route path="/forum" element={<Forum />} />
               <Route path="/join" element={<JoinUs />} />
               <Route path="/gallery" element={<Gallery />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/contact" element={<Navigate to="/join#contact" replace />} />
               <Route path="/modules/:id" element={<ModuleDetail />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF } from "@/data/contact";
 
 const Footer = () => {
   return (
@@ -27,17 +28,16 @@ const Footer = () => {
               <Link to="/about" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">About</Link>
               <Link to="/resources" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Resources</Link>
               <Link to="/blog" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Blog</Link>
-              <Link to="/join" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Join Us</Link>
+              <Link to="/join" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Join Us & Contact</Link>
               <Link to="/gallery" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Gallery</Link>
-              <Link to="/contact" className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors">Contact</Link>
             </div>
           </div>
 
           <div>
             <h4 className="font-display text-lg font-semibold mb-3">Contact</h4>
             <div className="flex flex-col gap-2 text-sm text-navy-foreground/70">
-              <span className="flex items-center gap-2"><Mail size={14} /> hello@lehrein.org</span>
-              <span className="flex items-center gap-2"><Phone size={14} /> +91 98765 43210</span>
+              <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-2 hover:text-navy-foreground transition-colors"><Mail size={14} /> {CONTACT_EMAIL}</a>
+              <a href={CONTACT_PHONE_HREF} className="flex items-center gap-2 hover:text-navy-foreground transition-colors"><Phone size={14} /> {CONTACT_PHONE}</a>
               <span className="flex items-center gap-2"><MapPin size={14} /> New Delhi, India</span>
             </div>
             <div className="flex gap-3 mt-4">

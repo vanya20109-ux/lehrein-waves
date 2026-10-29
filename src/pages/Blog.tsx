@@ -71,7 +71,7 @@ const Blog = () => {
             Submit an article that reflects on a Lehrein module, an interdisciplinary idea, or a piece of mentorship that helped your chapter grow. We amplify student voices across cities.
           </p>
           <Link
-            to="/contact"
+            to="/join#contact"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-navy text-navy-foreground font-semibold shadow-lg hover:shadow-xl hover:bg-navy/90 transition-all"
           >
             Submit an Article <ArrowRight size={18} />

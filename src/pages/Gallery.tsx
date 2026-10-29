@@ -1,5 +1,3 @@
-import { Camera, ImageIcon } from "lucide-react";
-
 const galleryImages = [
   { caption: "Shadow Puppetry Workshop at Heritage School", event: "First Lehrein Session", date: "Nov 2024" },
   { caption: "Students creating their puppet characters", event: "Module 1: Shadow Puppetry", date: "Nov 2024" },
@@ -8,6 +6,8 @@ const galleryImages = [
   { caption: "Facilitator training workshop", event: "Leadership Training", date: "Dec 2024" },
   { caption: "Community outreach session", event: "Community Chapter", date: "Jan 2025" },
 ];
+
+const shades = ["bg-sky", "bg-ocean", "bg-cobalt"];
 
 const Gallery = () => {
   return (
@@ -32,24 +32,14 @@ const Gallery = () => {
             {galleryImages.map((img, i) => (
               <div
                 key={i}
-                className={`group bg-card/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-navy/10 hover-lift animate-fade-up-delay-${Math.min(i + 1, 3)}`}
+                className="relative overflow-hidden bg-white rounded-2xl p-6 pt-7 border border-navy/10 shadow-md"
               >
-                {/* Placeholder image area */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-navy/10 to-steel/10 flex items-center justify-center relative">
-                  <div className="text-center">
-                    <ImageIcon size={40} className="text-steel/60 mx-auto mb-2" />
-                    <p className="text-xs text-muted-foreground">Photo coming soon</p>
-                  </div>
-                  <div className="absolute top-3 left-3">
-                    <span className="px-3 py-1 rounded-full bg-background/80 backdrop-blur-sm text-xs font-medium text-foreground">
-                      {img.event}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <p className="text-sm font-medium text-foreground mb-1">{img.caption}</p>
-                  <p className="text-xs text-muted-foreground">{img.date}</p>
-                </div>
+                <div className={`absolute inset-x-0 top-0 h-1.5 ${shades[i % shades.length]}`} />
+                <span className="inline-block mb-3 px-3 py-1 rounded-md bg-ocean/10 text-ocean text-xs font-semibold">
+                  {img.event}
+                </span>
+                <p className="text-base font-medium text-foreground mb-1">{img.caption}</p>
+                <p className="text-sm text-muted-foreground">{img.date}</p>
               </div>
             ))}
           </div>

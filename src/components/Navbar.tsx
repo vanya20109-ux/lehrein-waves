@@ -9,8 +9,7 @@ const navLinks = [
   { to: "/blog", label: "Blog" },
   { to: "/forum", label: "Forum" },
   { to: "/gallery", label: "Gallery" },
-  { to: "/join", label: "Join Us" },
-  { to: "/contact", label: "Contact" },
+  { to: "/join", label: "Join Us & Contact" },
 ];
 
 const Navbar = () => {

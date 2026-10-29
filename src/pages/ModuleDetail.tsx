@@ -1,19 +1,9 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Clock, Users, ChevronRight, Waves, MapPin, Clipboard, Package, ListOrdered, Sparkles, Target, ImageIcon } from "lucide-react";
+import { ArrowLeft, Clock, Users, ChevronRight, Waves, MapPin, Clipboard, Package, ListOrdered, Sparkles, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { modules } from "@/data/modules";
 import WaveDivider from "@/components/WaveDivider";
 import KanagawaWave from "@/components/KanagawaWave";
-
-const ImageFrame = ({ label }: {label: string;}) =>
-<div className="rounded-2xl border-2 border-navy/20 bg-gradient-to-br from-navy/5 via-steel/5 to-primary/5 aspect-[4/3] flex flex-col items-center justify-center gap-3 group hover:border-navy/40 transition-colors">
-    <div className="w-14 h-14 rounded-full bg-navy/10 flex items-center justify-center">
-      <ImageIcon size={24} className="text-steel" />
-    </div>
-    <p className="text-sm text-muted-foreground font-medium">{label}</p>
-    <p className="text-xs text-muted-foreground">Image coming soon</p>
-  </div>;
-
 
 const SectionHeading = ({ icon: Icon, title }: {icon: React.ElementType;title: string;}) =>
 <div className="flex items-center gap-3 mb-5">
@@ -103,11 +93,6 @@ const ModuleDetail = () => {
             <p className="text-muted-foreground leading-relaxed text-lg mb-6">
               {mod.fullDesc}
             </p>
-            {/* Image frame */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <ImageFrame label="Module overview" />
-              <ImageFrame label="Session in action" />
-            </div>
           </div>
 
           {/* Origin */}
@@ -116,9 +101,6 @@ const ModuleDetail = () => {
               <SectionHeading icon={MapPin} title="Origin" />
               <div className="rounded-2xl bg-gradient-to-br from-navy/8 to-steel/5 border border-navy/10 p-6 md:p-8">
                 <p className="text-muted-foreground leading-relaxed text-lg">{mod.origin}</p>
-              </div>
-              <div className="mt-4">
-                <ImageFrame label="Cultural origin & history" />
               </div>
             </div>
           }
@@ -137,9 +119,6 @@ const ModuleDetail = () => {
                   </div>
               )}
               </div>
-              <div className="mt-4">
-                <ImageFrame label="Facilitator setup reference" />
-              </div>
             </div>
           }
 
@@ -154,10 +133,6 @@ const ModuleDetail = () => {
                     <span className="text-foreground text-sm">{item}</span>
                   </div>
               )}
-              </div>
-              <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <ImageFrame label="Materials overview" />
-                <ImageFrame label="Setup example" />
               </div>
             </div>
           }
@@ -187,9 +162,6 @@ const ModuleDetail = () => {
                 })}
                 </div>
               </div>
-              <div className="mt-4">
-                <ImageFrame label="Session flow visual" />
-              </div>
             </div>
           }
 
@@ -199,11 +171,6 @@ const ModuleDetail = () => {
               <SectionHeading icon={Sparkles} title="What Children Produce" />
               <div className="rounded-2xl bg-gradient-to-br from-navy/8 to-primary/5 border border-navy/10 p-6 md:p-8">
                 <p className="text-muted-foreground leading-relaxed text-lg text-center">{mod.whatChildrenProduce}</p>
-              </div>
-              <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <ImageFrame label="Student work example 1" />
-                <ImageFrame label="Student work example 2" />
-                <ImageFrame label="Student work example 3" />
               </div>
             </div>
           }
@@ -253,7 +220,7 @@ const ModuleDetail = () => {
               <p className="text-navy-foreground/70 mb-6 max-w-md mx-auto">
                 Get in touch to bring {mod.name} to your organization or community.
               </p>
-              <Link to="/contact">
+              <Link to="/join#contact">
                 <Button variant="coral" size="lg" className="rounded-xl shadow-lg">
                   Contact Us
                 </Button>
