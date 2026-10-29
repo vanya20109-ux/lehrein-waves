@@ -14,7 +14,7 @@ const Gallery = () => {
     <div className="overflow-hidden">
       {/* Hero */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-white -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-mist via-ice to-white -z-10" />
         <div className="container mx-auto px-4 text-center animate-fade-up">
           <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground mb-6">
             Gallery
@@ -37,8 +37,8 @@ const Gallery = () => {
                 {/* Placeholder image area */}
                 <div className="aspect-[4/3] bg-gradient-to-br from-navy/10 to-steel/10 flex items-center justify-center relative">
                   <div className="text-center">
-                    <ImageIcon size={40} className="text-muted-foreground/40 mx-auto mb-2" />
-                    <p className="text-xs text-muted-foreground/60">Photo coming soon</p>
+                    <ImageIcon size={40} className="text-steel/60 mx-auto mb-2" />
+                    <p className="text-xs text-muted-foreground">Photo coming soon</p>
                   </div>
                   <div className="absolute top-3 left-3">
                     <span className="px-3 py-1 rounded-full bg-background/80 backdrop-blur-sm text-xs font-medium text-foreground">

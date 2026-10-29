@@ -55,6 +55,14 @@
     --teal-deep: 222 70% 9%;
     --teal-deep-foreground: 40 30% 94%;
 
+    /* Blue shades */
+    --sky: 199 89% 42%;
+    --ocean: 205 90% 32%;
+    --cobalt: 220 75% 42%;
+    --azure: 212 80% 52%;
+    --ice: 205 90% 96%;
+    --mist: 214 70% 92%;
+
     /* Kintsugi gold */
     --kintsugi-gold: 42 80% 55%;
     --kintsugi-light: 45 90% 70%;
@@ -122,6 +130,12 @@
     --kintsugi-gold: 42 80% 55%;
     --kintsugi-light: 45 90% 70%;
     --kintsugi-gold-foreground: 40 30% 94%;
+    --sky: 199 89% 55%;
+    --ocean: 205 85% 50%;
+    --cobalt: 220 80% 62%;
+    --azure: 212 85% 62%;
+    --ice: 215 40% 16%;
+    --mist: 216 35% 22%;
     --sidebar-background: 220 45% 7%;
     --sidebar-foreground: 210 40% 98%;
     --sidebar-primary: 212 85% 52%;

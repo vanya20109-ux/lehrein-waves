@@ -1,12 +1,15 @@
-import { ClipboardList, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ClipboardList, ArrowRight, CheckCircle2, School, MapPin } from "lucide-react";
 import WaveDivider from "@/components/WaveDivider";
+import { partnerSchools } from "@/data/schools";
+
+const schoolShades = ["bg-sky", "bg-ocean", "bg-cobalt"];
 
 const JoinUs = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-white -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-azure/15 via-ice to-white -z-10" />
         <div className="container mx-auto px-4 text-center animate-fade-up">
           <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground mb-6">
             Join Us
@@ -60,6 +63,42 @@ const JoinUs = () => {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Schools in our community */}
+      <section className="pb-20">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-10">
+            <div className="w-12 h-12 rounded-xl bg-ocean/10 flex items-center justify-center mx-auto mb-4">
+              <School size={24} className="text-ocean" />
+            </div>
+            <h2 className="font-display text-3xl font-bold text-foreground mb-3">
+              Schools Already With Us
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Join these schools in the Lehrein community
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {partnerSchools.map((school, i) => (
+              <div
+                key={school.name}
+                className="relative overflow-hidden bg-white rounded-2xl p-6 pt-7 border border-navy/10 shadow-md"
+              >
+                <div className={`absolute inset-x-0 top-0 h-1.5 ${schoolShades[i % schoolShades.length]}`} />
+                <h3 className="font-display text-lg font-semibold text-foreground mb-2">{school.name}</h3>
+                <p className="flex items-start gap-1.5 text-sm text-muted-foreground">
+                  <MapPin size={14} className="text-ocean mt-0.5 flex-shrink-0" /> {school.location}
+                </p>
+                {school.details && (
+                  <span className="inline-block mt-3 px-3 py-1 rounded-md bg-ocean/10 text-ocean text-xs font-semibold">
+                    {school.details}
+                  </span>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>

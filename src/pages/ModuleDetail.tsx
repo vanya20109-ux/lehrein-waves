@@ -8,10 +8,10 @@ import KanagawaWave from "@/components/KanagawaWave";
 const ImageFrame = ({ label }: {label: string;}) =>
 <div className="rounded-2xl border-2 border-navy/20 bg-gradient-to-br from-navy/5 via-steel/5 to-primary/5 aspect-[4/3] flex flex-col items-center justify-center gap-3 group hover:border-navy/40 transition-colors">
     <div className="w-14 h-14 rounded-full bg-navy/10 flex items-center justify-center">
-      <ImageIcon size={24} className="text-navy/40" />
+      <ImageIcon size={24} className="text-steel" />
     </div>
     <p className="text-sm text-muted-foreground font-medium">{label}</p>
-    <p className="text-xs text-muted-foreground/60">Image coming soon</p>
+    <p className="text-xs text-muted-foreground">Image coming soon</p>
   </div>;
 
 

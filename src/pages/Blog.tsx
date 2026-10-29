@@ -8,7 +8,7 @@ const Blog = () => {
     <div className="overflow-hidden">
       {/* Hero */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-white -z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sky/10 via-ice to-white -z-10" />
         <div className="container mx-auto px-4 text-center animate-fade-up">
           <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground mb-6">
             Blog

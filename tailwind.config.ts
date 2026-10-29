@@ -102,6 +102,12 @@ export default {
   				DEFAULT: 'hsl(var(--foam))',
   				foreground: 'hsl(var(--foam-foreground))'
   			},
+  			sky: 'hsl(var(--sky))',
+  			ocean: 'hsl(var(--ocean))',
+  			cobalt: 'hsl(var(--cobalt))',
+  			azure: 'hsl(var(--azure))',
+  			ice: 'hsl(var(--ice))',
+  			mist: 'hsl(var(--mist))',
   			'kintsugi-gold': {
   				DEFAULT: 'hsl(var(--kintsugi-gold))',
   				foreground: 'hsl(var(--kintsugi-gold-foreground))'

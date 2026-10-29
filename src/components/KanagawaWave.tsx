@@ -12,20 +12,20 @@ const KanagawaWave = ({ className = "" }: { className?: string }) => {
         {/* Deep ocean base: darkest layer */}
         <path
           d="M0,200 C120,160 200,100 360,130 C480,155 540,190 680,165 C780,148 840,100 960,120 C1080,140 1160,180 1280,155 C1360,140 1420,110 1440,120 L1440,260 L0,260Z"
-          fill="hsl(var(--navy))"
-          opacity="0.25"
+          fill="hsl(var(--ocean))"
+          opacity="0.45"
         />
         {/* Mid wave: the great curl body */}
         <path
           d="M0,210 C80,180 160,130 300,155 C400,172 460,200 580,180 C680,163 740,120 860,145 C960,165 1020,195 1140,175 C1240,158 1320,125 1440,150 L1440,260 L0,260Z"
-          fill="hsl(var(--primary))"
-          opacity="0.2"
+          fill="hsl(var(--sky))"
+          opacity="0.35"
         />
         {/* The iconic curling wave crest */}
         <path
           d="M0,225 C60,208 120,185 220,198 C300,208 340,225 440,215 C520,206 580,180 680,195 C760,206 820,222 900,212 C980,202 1040,182 1140,196 C1220,206 1300,222 1400,212 L1440,208 L1440,260 L0,260Z"
-          fill="hsl(var(--indigo))"
-          opacity="0.15"
+          fill="hsl(var(--azure))"
+          opacity="0.3"
         />
 
         {/* Wave curl: the Kanagawa signature spiral */}
